@@ -1,28 +1,22 @@
 # MX QR Code#
 
-![MX Google Map V1](images/mx-qr-code-expressionengine3.jpg)
+![MX QR Code](/resources/img/qr_ext.png)
 
-**MX QR Code** QR Code Generator for ExpressionEngine 3.
+**MX QR Code** QR Code Generator for ExpressionEngine.
 
 ## Installation
-* Download the latest version of MX QR Code and extract the .zip to your desktop.
-* Copy *qr_code* to */system/user/addons/*
-
-## Configuration
-Once the Plugin is installed, you should be able to see it listed in the Add-On Manager in your ExpressionEngine Control Panel. Is no needs in any control panel activation or configuration.
+* Place the **qr_code** folder inside your **user/addons** folder
+* Go to **cp/addons** and install *MX QR Code*
 
 ## Template Tags
 
 {exp:qr_code}
 
-	<img src="{exp:qr_code type="" action="" tel="" data="ExpressionEngine" title="" email="" subj=""}" alt="QR code"/> 
+    <img src="{exp:qr_code action="" tel="" data="ExpressionEngine" title="" email="" subj=""}" alt="QR code"/>
 
 ### Parameters
 
-	expression="-4(15/42)^23*(4-sqrt(16))-15" required
-
-### Avalible functions:
-*action = "" *optional
+*action = ""* optional
 
 Plugin has a couple pattern for QR code messages:
 
@@ -48,9 +42,9 @@ subject for email
 
 Title for bookmark
 
-*size = "4"* optional, default "4"
+*size = "200"* optional, default "200"
 
-module size
+qr code size *in px*
 
 *ecc = "M"* optional, default **M**
 
@@ -68,9 +62,19 @@ pixel color
 
 background color
 
-*outline_size = "2"* optional, default **2**
+*margin = "2"* optional, default **0**
 
-outline size
+margin size in px
+
+*logo = ""* optional
+
+url / path to logo
+
+
+*logo_size="100,100"* optional
+
+logo size
+
 
 *base_path*
 
@@ -80,16 +84,21 @@ path to web root (required if you use base_cache parameter)
 
 path to image folder
 
+*base64_encode = "no"* optional
+
+incode image to base64 to inline image
+
+
 ## Support Policy
 This is Communite Edition (CE) add-on.
 
-## Contributing To MX QR Code for ExpressionEngine 3
+## Contributing To MX QR Code for ExpressionEngine
 
 Your participation to MX QR Code development is very welcome!
 
 You may participate in the following ways:
 
-* [Report issues](https://github.com/MaxLazar/mx-qr-code-ee3/issues)
+* [Report issues](https://github.com/MaxLazar/mx-qr-code/issues)
 * Fix issues, develop features, write/polish documentation
 Before you start, please adopt an existing issue (labelled with "ready for adoption") or start a new one to avoid duplicated efforts.
 Please submit a merge request after you finish development.
