@@ -1,4 +1,4 @@
-# MX QR Code#
+# MX QR Code
 
 ![MX QR Code](/resources/img/qr_ext.png)
 

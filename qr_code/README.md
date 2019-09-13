@@ -1,4 +1,4 @@
-# MX QR Code#
+# MX QR Code
 
 **MX QR Code** QR Code Generator for ExpressionEngine.
 
